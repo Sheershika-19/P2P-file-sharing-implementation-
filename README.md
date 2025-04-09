@@ -32,22 +32,22 @@ For example:
 1. **Start the Server**:  
    Compile and run `server.cpp` using below commands. It will continuously listen for client connections.
 
-   g++ server.cpp -o server -pthread
+   g++ server.cpp -o server -pthread<br>
    ./server
 
-2. **Start a Client**:  
+3. **Start a Client**:  
    Compile and run `client.cpp` using below commands. Use the `Register` command to register your files.
    
-   g++ client_tcp.cpp -o client -pthread
+   g++ client_tcp.cpp -o client -pthread<br>
    ./client
 
-3. **Request Files**:  
+4. **Request Files**:  
    Use the `Send` command to request files. The client will:
    - Ask the server for peers with the requested file(s)
    - Try connecting to each peer in order
    - Download the file from the first responsive peer
 
-4. **File Save Format**:  
+5. **File Save Format**:  
    Each successfully downloaded file is saved with the format: received_<original_filename>
 
    
