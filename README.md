@@ -39,7 +39,7 @@ For example:
    Compile and run `client.cpp` using below commands. Use the `Register` command to register your files.
    
    g++ client_tcp.cpp -o client -pthread<br>
-   ./client
+   ./client <server_ip>
 
 4. **Request Files**:  
    Use the `Send` command to request files. The client will:
